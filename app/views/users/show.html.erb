@@ -1,4 +1,6 @@
 <h1>This Show Page</h1>
 
 <p><%= @user.name %></p>
-<p><%= @user.role %></p>
+<% if @user.is_admin? %>
+<p>Admin</p>
+<% end %>
